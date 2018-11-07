@@ -1,15 +1,3 @@
-/*!
-    Title: Dev Portfolio Template
-    Version: 1.2.1
-    Last Change: 08/28/2017
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
-
-    Description: This file contains all the styles associated with the page
-    that don't come from third party libraries. This file gets compiled using
-    Gulp and send to the /css folder which is then loaded on the page.
-*/
 /*
     File Contents:
 
@@ -478,6 +466,42 @@ footer {
 img#dcp {
     width: 50px;
     content:url("../images/nyc_planning.png");
+}
+
+img#dot {
+    width: 55px;
+    content:url("../images/dot_icon.jpg");
+}
+
+img#nyrp {
+    width: 55px;
+    content:url("../images/nyrp_icon.jpg");
+}
+
+img#atlas {
+    width: 50px;
+    content:url("../images/atlas_icon.svg");
+}
+
+img#tele {
+    width: 30px;
+    content:url("../images/telepathyblk_icon.svg");
+}
+
+img#ccny {
+    width: 100px;
+    content:url("../images/ccny_icon.png");
+    display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+}
+
+img#hunter {
+    width: 100px;
+    content:url("../images/hunter_icon.jpg");
+    display: block;
+    // margin-left: auto;
+    // margin-right: auto;
 }
 
 ul { 
