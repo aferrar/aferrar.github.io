@@ -5,7 +5,7 @@
         $('#lead-content').hide();
         setTimeout(function() {
             $('#lead-content').fadeIn(3000); // 3000ms for a smooth fade in effect
-        }, 13000);
+        }, 12000);
     }
 
     // Execute on load
@@ -13,8 +13,10 @@
 
     // Execute every 4 minutes and 45 seconds
     setInterval(function() {
-        hideAndFadeIn();
-        setTimeout(hideAndFadeIn, 27); // 285000ms or 4 minutes and 45 seconds for repeating the hide and fade in effect
+        $('#lead-content').hide();
+        setTimeout(function() {
+            hideAndFadeIn();
+        }, 15000);
     }, 285000);
     // Alternate descriptor text every 5 seconds
     count = 1;
