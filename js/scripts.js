@@ -11,9 +11,11 @@
     // Execute on load
     hideAndFadeIn();
 
-    // Execute every 5 minutes
-    setInterval(hideAndFadeIn, 300000); // 300000ms or 5 minutes for repeating the hide and fade in effect
-
+    // Execute every 4 minutes and 45 seconds
+    setInterval(function() {
+        hideAndFadeIn();
+        setTimeout(hideAndFadeIn, 15); // 285000ms or 4 minutes and 45 seconds for repeating the hide and fade in effect
+    }, 285000);
     // Alternate descriptor text every 5 seconds
     count = 1;
     wordArray = [" Analytics", "Asset Management", "Applications", "Big Data ETLs", "Consulting", "Dashboards", "Design"];
