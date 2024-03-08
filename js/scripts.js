@@ -62,7 +62,7 @@
         let currentTime = video.currentTime; // This gives you the current time of the video in seconds
 
         if ((currentTime >= 0 && currentTime <= 14) || (currentTime >= 285 && currentTime <= 300)) {
-            $('#lead-content').animate({opacity: 0}, 3000);
+            $('#lead-content').css('opacity', '0');
         } else {
             $('#lead-content').animate({opacity: 1}, 3000);
             // $('#word').animate({opacity: 1}, 3000);
