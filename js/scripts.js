@@ -21,7 +21,7 @@
     let colorCount = 0;
 
     let wordArray = [
-        { word: "Analytics", font: "font-family: Monaco, monospace" },
+        { word: "Analytics", font: "Monaco, monospace" },
         { word: "Asset Management", font: "Georgia, serif" }, 
         { word: "Applications", font: "Impact, sans-serif" }, 
         { word: "Consulting", font: "Palatino, serif" }, 
