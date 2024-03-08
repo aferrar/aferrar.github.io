@@ -62,7 +62,7 @@
         let currentTime = video.currentTime; // This gives you the current time of the video in seconds
 
         if ((currentTime >= 0 && currentTime <= 14) || (currentTime >= 285 && currentTime <= 300)) {
-            $('#lead-content').css('opacity', '0');
+            $('#lead-content').animate({opacity: 0}, 3000);
         } else {
             $('#lead-content').animate({opacity: 1}, 3000);
             // $('#word').animate({opacity: 1}, 3000);
@@ -88,9 +88,9 @@
 
     function word_swap() {
         $("#word").fadeTo(2000, 0, function() {
-            $(this).text(wordArray[wordCount].word).fadeTo(2000, 1);
-            $("#word").css("color", colors[colorCount]);
-            $("#word").css("font-family", wordArray[wordCount].font);
+            $(this).text(wordArray[wordCount % wordArray.length].word).fadeTo(2000, 1);
+            $("#word").css("color", colors[colorCount % colors.length]);
+            $("#word").css("font-family", wordArray[wordCount % wordArray.length].font);
             wordCount++;
             colorCount++;
             if (wordCount >= wordArray.length) {
