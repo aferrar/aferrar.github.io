@@ -60,7 +60,7 @@
 
     video.addEventListener('timeupdate', function() {
         let currentTime = video.currentTime; // This gives you the current time of the video in seconds
-
+        console.log(currentTime)
         if ((currentTime >= 0 && currentTime <= 14) || (currentTime >= 285 && currentTime <= 300)) {
             $('#lead-content').css('opacity', '0');
         } else {
