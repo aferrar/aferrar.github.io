@@ -78,13 +78,13 @@
         { word: "Analytics", font: "Monaco, monospace" },
         { word: "Asset Management", font: "Georgia, serif" }, 
         { word: "Applications", font: "Impact, sans-serif" }, 
-        { word: "Consulting", font: "Palatino, serif" }, 
         { word: "Data Engineering", font: "Courier New, monospace" }, 
-        { word: "Design", font: "Futura, sans-serif" }, 
-        { word: "Systems Administration", font: "Garamond, serif" }
+        { word: "Design", font: "Futura, sans-serif" },
+        { word: "Systems Consulting", font: "Palatino, serif" }, 
+
     ];
 
-    let colors = ["white", "green", "yellow", "pink", "purple", "red"];
+    let colors = ["white", "green", "yellow", "pink", "red"];
 
     function word_swap() {
         $("#word").fadeTo(2000, 0, function() {
