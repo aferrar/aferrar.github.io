@@ -10,16 +10,18 @@
         if ((currentTime >= 0 && currentTime <= 14) || (currentTime >= 285 && currentTime <= 300)) {
             $('#lead-content').css('opacity', '0');
         } else {
-            $('#lead-content').animate({opacity: 1}, 3000); // 3000ms for a smooth fade in effect
+            $('#lead-content').animate({opacity: 1}, 3000);
+            // $('#word').animate({opacity: 1}, 3000);
+             // 3000ms for a smooth fade in effect
         }
     });
     
     // Alternate descriptor text every 6 seconds after 14 seconds from initial page load
     let wordCount = 0;
     let colorCount = 0;
-    
+
     let wordArray = [
-        { word: "Analytics", font: "Monaco, monospace" }, 
+        { word: "Analytics", font: "font-family: Monaco, monospace" },
         { word: "Asset Management", font: "Georgia, serif" }, 
         { word: "Applications", font: "Impact, sans-serif" }, 
         { word: "Consulting", font: "Palatino, serif" }, 
@@ -27,7 +29,8 @@
         { word: "Design", font: "Futura, sans-serif" }, 
         { word: "Systems Administration", font: "Garamond, serif" }
     ];
-    let colors = ["white", "red", "green", "blue", "yellow", "pink", "purple"];
+
+    let colors = ["white", "green", "yellow", "pink", "purple", "red"];
 
     function word_swap() {
         $("#word").fadeTo(2000, 0, function() {
@@ -45,8 +48,9 @@
         });
     };
 
-    setTimeout(setInterval(word_swap, 6000), 14000); // Start the word_swap function 14 seconds after initial page load
-    
-    // setTimeout(word_swap, 14000);
+    // Correct usage of setTimeout to delay the start of the setInterval
+    setTimeout(function() {
+        setInterval(word_swap, 4000);
+    }, 14000);
 
 })(jQuery);

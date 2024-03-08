@@ -342,6 +342,8 @@ footer {
 
 #word {
     text-decoration: none;
+    font-family: Monaco, monospace;
+    opacity: 0;
 }
 
 @keyframes pulsate {
