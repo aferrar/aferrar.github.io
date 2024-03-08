@@ -263,19 +263,20 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/header_image.png) #000;
+    background: #000;
     background-size: cover;
     padding: 15px;
     overflow: hidden
 }
 
 #lead-content {
+    opacity: 0;
     position: absolute;
     z-index: 10;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center
+    text-align: center;
 }
 
 #lead-content h1,
@@ -339,6 +340,10 @@ footer {
     padding-top: 5px
 }
 
+#word {
+    text-decoration: none;
+}
+
 @keyframes pulsate {
     0% {
         transform: scale(1, 1)
@@ -378,10 +383,11 @@ footer {
 }
 
 img#kpmg {
-    width: 50px;
+    width: 70px;
     content: url("../images/kpmg_image.png");
     background-color: white;
-    background-blend-mode: multiply
+    background-blend-mode: multiply;
+    margin-bottom: -20px;
 }
 
 img#dcp {
@@ -425,6 +431,35 @@ ul {
     font-family: 'Lato', sans-serif;
     font-size: 0.9em;
     color: #74808a
+}
+
+.data-date {
+    border-radius: 15px;
+}
+
+.project {
+    border-radius: 25px;
+}
+
+.education-block {
+    border-radius: 15px;
+}
+
+.experience-block {
+    border-radius: 15px;
+    font-family: 'Lato', sans-serif; /* Example font */
+    font-size: 16px; /* Example size */
+    line-height: 1.6;
+    color: #333; /* Dark grey for better contrast */
+    background: #fff; /* White background */
+    padding: 20px; /* More padding inside the card */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.experience-block h2 {
+    font-size: 24px; /* Larger font size for headings */
+    margin-bottom: 10px; /* Space below headings */
 }
 
 #experience-timeline {
@@ -656,7 +691,8 @@ ul {
     background: #e4e4ea;
     list-style: none;
     cursor: default;
-    font-size: 1.2em
+    font-size: 1.2em;
+    border-radius: 15px
 }
 
 #contact {

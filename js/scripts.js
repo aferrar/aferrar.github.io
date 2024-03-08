@@ -1,33 +1,52 @@
 (function($) {
 
-    // Hide #lead-content for the first 12 seconds and then fade in
-    function hideAndFadeIn() {
-        $('#lead-content').hide();
-        setTimeout(function() {
-            $('#lead-content').fadeIn(3000); // 3000ms for a smooth fade in effect
-        }, 12000);
-    }
+    // Display splash text based on video timestamp to avoid text overlap
+    
+    const video = document.getElementById('splashvid');
 
-    // Execute on load
-    hideAndFadeIn();
+    video.addEventListener('timeupdate', function() {
+        let currentTime = video.currentTime; // This gives you the current time of the video in seconds
 
-    // Execute every 4 minutes and 45 seconds
-    setInterval(function() {
-        $('#lead-content').hide();
-        setTimeout(function() {
-            hideAndFadeIn();
-        }, 15000);
-    }, 285000);
-    // Alternate descriptor text every 5 seconds
-    count = 1;
-    wordArray = [" Analytics", "Asset Management", "Applications", "Big Data ETLs", "Consulting", "Dashboards", "Design"];
+        if ((currentTime >= 0 && currentTime <= 14) || (currentTime >= 285 && currentTime <= 300)) {
+            $('#lead-content').css('opacity', '0');
+        } else {
+            $('#lead-content').animate({opacity: 1}, 3000); // 3000ms for a smooth fade in effect
+        }
+    });
+    
+    // Alternate descriptor text every 6 seconds after 14 seconds from initial page load
+    let wordCount = 0;
+    let colorCount = 0;
+    
+    let wordArray = [
+        { word: "Analytics", font: "Monaco, monospace" }, 
+        { word: "Asset Management", font: "Georgia, serif" }, 
+        { word: "Applications", font: "Impact, sans-serif" }, 
+        { word: "Consulting", font: "Palatino, serif" }, 
+        { word: "Data Engineering", font: "Courier New, monospace" }, 
+        { word: "Design", font: "Futura, sans-serif" }, 
+        { word: "Systems Administration", font: "Garamond, serif" }
+    ];
+    let colors = ["white", "red", "green", "blue", "yellow", "pink", "purple"];
+
     function word_swap() {
-        $("#word").fadeTo(750, 0, function() {
-            $(this).text(wordArray[count % wordArray.length]).fadeTo(750, 1);
-            count++;
+        $("#word").fadeTo(2000, 0, function() {
+            $(this).text(wordArray[wordCount].word).fadeTo(2000, 1);
+            $("#word").css("color", colors[colorCount]);
+            $("#word").css("font-family", wordArray[wordCount].font);
+            wordCount++;
+            colorCount++;
+            if (wordCount >= wordArray.length) {
+                wordCount = 0; // Reset count when it exceeds the length of wordArray
+            }
+            if (colorCount >= colors.length) {
+                colorCount = 0; // Reset count when it exceeds the length of wordArray
+            }
         });
     };
+
+    setTimeout(setInterval(word_swap, 6000), 14000); // Start the word_swap function 14 seconds after initial page load
     
-    setInterval(word_swap, 3000);
+    // setTimeout(word_swap, 14000);
 
 })(jQuery);
