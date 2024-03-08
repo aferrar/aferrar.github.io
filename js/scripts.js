@@ -105,6 +105,6 @@
     // Correct usage of setTimeout to delay the start of the setInterval
     setTimeout(function() {
         setInterval(word_swap, 4000);
-    }, 14000);
+    }, 10000);
 
 })(jQuery);
