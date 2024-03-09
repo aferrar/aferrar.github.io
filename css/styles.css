@@ -342,8 +342,13 @@ footer {
 
 #word {
     text-decoration: none;
-    font-family: Monaco, monospace;
-    opacity: 0;
+    font-family: Lavanderia, monospace;
+    opacity: 1;
+}
+
+@font-face {
+    font-family: Lavanderia;
+    src: url('../Lavanderia-Regular.otf');
 }
 
 @keyframes pulsate {
