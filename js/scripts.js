@@ -62,7 +62,6 @@
 
     video.addEventListener('timeupdate', function() {
         let currentTime = video.currentTime;
-        console.log(currentTime);
         if ((currentTime >= 0 && currentTime <= 14) || (currentTime >= 285 && currentTime <= 300)) {
             if (!hasFadedOut) { // Check if fade out has not been triggered yet
                 $('#lead-content').stop().animate({opacity: 0}, 500);
@@ -98,7 +97,6 @@
     let colors = ["green", "yellow", "pink", "red"];
 
     function wordSwap() {
-        console.log(word)
         $("#word").fadeTo(2000, 0, function() {
             $(this).text(wordArray[wordCount % wordArray.length].word).fadeTo(2000, 1);
             $("#word").css("color", colors[colorCount % colors.length]);

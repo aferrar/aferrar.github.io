@@ -389,6 +389,22 @@ footer {
     color: #374054
 }
 
+#kpmg-block h3 {
+    color: #002778
+}
+
+#dcp-block h3 {
+    color: #F39A1D
+}
+
+#dot-block h3 {
+    color: #11A653
+}
+
+#nyrp-block h3 {
+    color: #7AC043
+}
+
 img#kpmg {
     width: 70px;
     content: url("../images/kpmg_image.png");
@@ -450,6 +466,14 @@ ul {
 
 .education-block {
     border-radius: 15px;
+}
+
+#hunter-block h3 {
+    color: #4D2D90;
+}
+
+#ccny-block h3 {
+    color: #B290FF;
 }
 
 .experience-block {
