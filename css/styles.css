@@ -346,25 +346,6 @@ footer {
     opacity: 1;
 }
 
-@font-face {
-    font-family: Lavanderia;
-    src: url('../Lavanderia-Regular.otf');
-}
-
-@keyframes pulsate {
-    0% {
-        transform: scale(1, 1)
-    }
-
-    50% {
-        transform: scale(1.2, 1.2)
-    }
-
-    100% {
-        transform: scale(1, 1)
-    }
-}
-
 #about {
     padding: 75px 15px;
     border-bottom: 1px solid #dcd9d9
@@ -407,7 +388,7 @@ footer {
 
 img#kpmg {
     width: 70px;
-    content: url("../images/kpmg_image.png");
+    content: url("../assets/icons/kpmg_image.png");
     background-color: white;
     background-blend-mode: multiply;
     margin-bottom: -20px;
@@ -415,38 +396,38 @@ img#kpmg {
 
 img#dcp {
     width: 50px;
-    content: url("../images/nyc_planning.png")
+    content: url("../assets/icons/nyc_planning.png")
 }
 
 img#dot {
     width: 55px;
-    content: url("../images/dot_icon.jpg")
+    content: url("../assets/icons/dot_icon.jpg")
 }
 
 img#nyrp {
     width: 55px;
-    content: url("../images/nyrp_icon.jpg")
+    content: url("../assets/icons/nyrp_icon.jpg")
 }
 
 img#atlas {
     width: 50px;
-    content: url("../images/atlas_icon.svg")
+    content: url("../assets/icons/atlas_icon.svg")
 }
 
 img#tele {
     width: 30px;
-    content: url("../images/telepathyblk_icon.svg")
+    content: url("../assets/icons/telepathyblk_icon.svg")
 }
 
 img#ccny {
     width: 100px;
-    content: url("../images/ccny_icon.png");
+    content: url("../assets/icons//ccny_icon.png");
     display: block
 }
 
 img#hunter {
     width: 100px;
-    content: url("../images/hunter_icon.jpg");
+    content: url("../assets/icons/hunter_icon.jpg");
     display: block
 }
 
@@ -847,6 +828,25 @@ ul {
 
 .optional-section-block ul {
     padding: 0 0 0 15px
+}
+
+@font-face {
+    font-family: Lavanderia;
+    src: url('../assets/fonts/Lavanderia-Regular.otf');
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1, 1)
+    }
+
+    50% {
+        transform: scale(1.2, 1.2)
+    }
+
+    100% {
+        transform: scale(1, 1)
+    }
 }
 
 @media only screen and (max-width: 750px) {

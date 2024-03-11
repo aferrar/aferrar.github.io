@@ -85,11 +85,11 @@
     let colorCount = 0;
 
     let wordArray = [
-        { word: "Asset Management", font: "Georgia, serif" }, 
+        { word: "Asset Management", font: "PT Serif, serif" }, 
         { word: "Applications", font: "Impact, sans-serif" }, 
         { word: "Data Engineering", font: "Courier New, monospace" }, 
         { word: "Design", font: "Futura, sans-serif" },
-        { word: "Systems Consulting", font: "Palatino, serif" },
+        { word: "Systems Consulting", font: "Montserrat Subrayada, sans-serif" },
         { word: "Analytics", font: "Lavanderia, monospace" }
 
     ];
