@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="utf-8">
@@ -10,52 +10,38 @@
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Subrayada:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat+Subrayada:wght@400;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-    <!-- End #mobile-menu-toggle -->
     <header>
         <div id="mobile-menu-close">
             <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
-    <!-- End header -->
 
     <div id="lead">
         <div id="lead-content">
             <h1>Adrian Ferrar</h1>
             <h2 id="geospatial_static">Geospatial</h2>
             <h2 id="word">Analytics</h2>
-            <br />
+            <br>
             <a href="assets/resume.pdf" class="btn-rounded-white">View Resume</a>
-        </div>        <!-- End #lead-content -->
+        </div>
 
         <div id="lead-overlay">
             <video id="splashvid" src="assets/splashvideo.mp4" playsinline muted loop autoplay></video>
@@ -66,9 +52,7 @@
                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </span>
         </div>
-        <!-- End #lead-down -->
     </div>
-    <!-- End #lead -->
 
     <div id="about">
         <div class="container">
@@ -81,63 +65,63 @@
                         Geospatial professional with background in GIS, web development, & database/systems administration. 
                         Specialization in architecting and deploying geospatial solutions for a range of private, municipal, state, and federal stakeholders.
                     </p>
-                    <br />
+                    <br>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End #about -->
 
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
             <div class="experience-block" id="kpmg-block" data-date="January 2022 – Present">
-                <img id="kpmg" />
+                <img id="kpmg">
                 <br>
                 <h3>KPMG US</h3>
                 <h4>Senior GIS Specialist - System Admin</h4>
                 <p>
                     Senior GIS Specialist with KPMG's Advisory division. Working within the GIS team to deploy and maintain ArcGIS Enterprise and other GIS software while delivering high-quality client solutions. Expertises in creating data pipelines, migrating data from vendor platforms, and developing user-friendly GUIs.
-                <ul>
-                        <li>Deployed Kubernetes-based version of ArcGIS Enterprise and currently maintain all four environment instances.</li>
-                        <li>Produce and present numerous client deliverables, including analytical results, dynamic map visualizations, or systems/strategy consultation.</li>
-                        <li>Develop data pipelines for seamless migration of data from vendor/public platforms to internal Postgres DB.</li>
-                        <li>Implement user-friendly GUIs for efficient execution of data pipelines by other team members.</li>
-                        <li>Produce custom web services for both internal/external consumption.</li>
-                        <li>Develop rich web applications using combination of low-code and custom code methods.</li>
-                </ul>
                 </p>
+                <ul>
+                    <li>Deployed Kubernetes-based version of ArcGIS Enterprise and currently maintain all four environment instances.</li>
+                    <li>Produce and present numerous client deliverables, including analytical results, dynamic map visualizations, or systems/strategy consultation.</li>
+                    <li>Develop data pipelines for seamless migration of data from vendor/public platforms to internal Postgres DB.</li>
+                    <li>Implement user-friendly GUIs for efficient execution of data pipelines by other team members.</li>
+                    <li>Produce custom web services for both internal/external consumption.</li>
+                    <li>Develop rich web applications using combination of low-code and custom code methods.</li>
+                </ul>
             </div>
             
             <div class="experience-block" id="dcp-block" data-date="October 2018 – December 2021">
-                <img id="dcp" />
+                <img id="dcp">
                 <br>
                 <h3>NYC Department of City Planning</h3>
                 <h4>GIS Specialist</h4>
                 <p>
                     Served as a GIS Specialist in NYCDCP's Enterprise Data Management division managing agency's spatial data products through scripted automation and assisting in troubleshooting GIS/IT related issues.
-                <ul>
-                        <li>Developed data pipelines for distribution of products within agency's internal data stores and across various external platforms (ArcGIS Online, Carto, DigitalOcean, FTP servers, etc)</li>
-                        <ul>
-                            <li>Datasets include: LION, MapPLUTO, Digital City Map (DCM), Zoning Features, E-Designations, Mandatory Inclusionary Housing (MIH), Building Footprints, Digital Tax Map (DTM), and more.</li>
-                        </ul>
-                        <li>Audited agency platforms for REST service maintenance and data quality compliance in accordance with open data mandates. Over 500+ internal and publicly facing datasets.</li>
-                        <li>Upgraded agency’s ESRI infrastructure and developed recurring maintenance procedures to improve database render performance by 43%.</li>
-                        <li>Developed internal SDE monitoring scripts to track and visualize and report SDE usage, by user, across agency.</li>
-                        <li>Developed custom internal ESRI License Manager to allow users the option to view license availability and request access from other users.</li>
-                        <li>Maintained updates to The Guide to Planning Resources (internal web platform for sharing data resources across divisions) through combination of Microsoft Sharepoint, ArcGIS Hub, ArcGIS Online, and Github platform management.</li>
-                </ul>
                 </p>
+                <ul>
+                    <li>Developed data pipelines for distribution of products within agency's internal data stores and across various external platforms (ArcGIS Online, Carto, DigitalOcean, FTP servers, etc)</li>
+                    <ul>
+                        <li>Datasets include: LION, MapPLUTO, Digital City Map (DCM), Zoning Features, E-Designations, Mandatory Inclusionary Housing (MIH), Building Footprints, Digital Tax Map (DTM), and more.</li>
+                    </ul>
+                    <li>Audited agency platforms for REST service maintenance and data quality compliance in accordance with open data mandates. Over 500+ internal and publicly facing datasets.</li>
+                    <li>Upgraded agency’s ESRI infrastructure and developed recurring maintenance procedures to improve database render performance by 43%.</li>
+                    <li>Developed internal SDE monitoring scripts to track and visualize and report SDE usage, by user, across agency.</li>
+                    <li>Developed custom internal ESRI License Manager to allow users the option to view license availability and request access from other users.</li>
+                    <li>Maintained updates to The Guide to Planning Resources (internal web platform for sharing data resources across divisions) through combination of Microsoft Sharepoint, ArcGIS Hub, ArcGIS Online, and Github platform management.</li>
+                </ul>
             </div>
 
             <div class="experience-block" id="dot-block" data-date="January 2017 – June 2018">
-                <img id="dot" />
+                <img id="dot">
                 <br>
                 <h3>NYC Department of Transportation</h3>
                 <h4>College Aide</h4>
                 <p>
                     While working under Asset Management division, maintained various geodatabases with python scripts to automate recurring tasks in large datasets and contributed to the development of a citywide predictive street deterioration model.
                     Maintained various Microsoft Access databases.
+                </p>
                 <ul>
                     <li>Increased office workflow efficiency through the development of scripted pipelines for updating street asset records in File Geodatabase and SDE server repositories.</li>
                     <li>Contributed to the development of a citywide predictive Street Deterioration Model using R, SQL, and Python.</li>
@@ -145,55 +129,53 @@
                     <li>Led the collection and digitization of all NYC street ownership records. Worked in collaboration with Department of City Planning and the respective City Borough President's Topography Departments.</li>
                     <li>Developed QA process for evaluating digitization metrics.</li>
                 </ul>
-                </p>
             </div>
 
             <div class="experience-block" id="nyrp-block" data-date="May 2016 – December 2016">
-                <img id="nyrp" src="assets/icons/nyrp_icon.jpg"/>
+                <img id="nyrp" src="assets/icons/nyrp_icon.jpg">
                 <br>
                 <h3>New York Restoration Project</h3>
                 <h4>AmeriCorps Environmental Steward</h4>
                 <p>
                     Served as an Evironmental Steward involved in fostering community environment and maintaining garden assets/responsibilities in areas of East New York and Brownsville, Brooklyn.
+                </p>
                 <ul>
                     <li>Participated in and planned outreach events, volunteer field projects, and provided technical support and training to community gardeners.</li>
                 </ul>
-                </p>
             </div>
 
             <div class="experience-block" id="atlas-block" data-date="August 2015 – December 2015">
-                <img id="atlas" />
+                <img id="atlas">
                 <br>
                 <h3>Atlas Environmental Lab</h3>
                 <h4>Environmental Lab Analyst</h4>
                 <p>
                     Served as laboratory researcher involved with examination of potential asbestos containing materials (ACMs).
+                </p>
                 <ul>
                     <li>Analyzed bulk and airborne filter samples using stereo, phase-contrast, and polarized-light microscopy and prepared paint, soil, dust wipe, and composited wipe samples for environmental lead analysis via AAS.</li>
                 </ul>
-                </p>
             </div>
 
             <div class="experience-block" data-date="September 2014 – August 2015">
-                <img id="tele" />
+                <img id="tele">
                 <br>
                 <h3>Telepathy</h3>
                 <h4>Programming Intern</h4>
                 <p>
                     Served as personal assistant of independent programmer. Aided in development of mobile applications.
+                </p>
                 <ul>
                     <li>Tested, debugged, and modified small-scale iOS and Android applications.</li>
                 </ul>
-                </p>
             </div>
         </div>
     </div>
-    <!-- End #experience -->
 
     <div id="education">
         <h2 class="heading">Education</h2>
         <div class="education-block" id="hunter-block">
-            <img id="hunter" />
+            <img id="hunter">
             <br>
             <h3>Hunter College</h3>
             <span class="education-date">Jan 2017 - May 2018</span>
@@ -202,10 +184,9 @@
                 Experience in computational aspects of GIS with focuses in data pipeline creation, database modeling, web visualizations, and spatial statistics.
             </p>
         </div>
-        <!-- End .education-block -->
 
         <div class="education-block" id="ccny-block">
-            <img id="ccny" />
+            <img id="ccny">
             <br>
             <h3>The City College of New York</h3>
             <span class="education-date">Jan 2013 - May 2014</span>
@@ -214,19 +195,29 @@
                 Experience modeling Earth systems. Focus in biogeology via research assistantship regarding clay/bacteria/bacteriophage interactions.
             </p>
         </div>
-        <!-- End .education-block -->
     </div>
-    <!-- End #education -->
 
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
         <div class="container">
-            <div class="row"></div>
+            <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="assets/icons/becs_small.jpg" />
+                        <img src="assets/icons/hsrg.jpg">
                     </div>
-                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Human Resources Service Guide (HSRG) Map</h3>
+                        <p>
+                            The Human Services Resource Guide, aka, the HSRG, is a searchable database that contains information on thousands of nonprofit and government services available to Fairfax County residents. Utilziing ESRI Suite.
+                        </p>
+                        <a href="https://experience.arcgis.com/experience/9ed38e173ed04e36bf9588919f4960d9">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="assets/icons/becs_small.jpg">
+                    </div>
                     <div class="project-info">
                         <h3>BECs Leaflet Map</h3>
                         <p>
@@ -234,15 +225,12 @@
                         </p>
                         <a href="https://aferrar.github.io/becs_map/">View Project</a>
                     </div>
-                    <!-- End .project-info -->
                 </div>
-                <!-- End .project -->
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="assets/icons/soundscapes_small.jpg" />
+                        <img src="assets/icons/soundscapes_small.jpg">
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Soundscape StoryMap/CessiumGlobe</h3>
                         <p>
@@ -250,15 +238,12 @@
                         </p>
                         <a href="https://aferrar.maps.arcgis.com/apps/MapJournal/index.html?appid=ea1f32cbbb1b488a964128b21b5868ae">View Project</a>
                     </div>
-                    <!-- End .project-info -->
                 </div>
-                <!-- End .project -->
                 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="assets/icons/gmaps_resume_small.jpg" />
+                        <img src="assets/icons/gmaps_resume_small.jpg">
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Google Maps Resume</h3>
                         <p>
@@ -266,15 +251,12 @@
                         </p>
                         <a href="http://aferrar.github.io/gmap_resume/">View Project</a>
                     </div>
-                    <!-- End .project-info -->
                 </div>
-                <!-- End .project -->
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="assets/icons/herd_immunity_small.jpg" />
+                        <img src="assets/icons/herd_immunity_small.jpg">
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Herd Immunity Visualization</h3>
                         <p>
@@ -282,16 +264,13 @@
                         </p>
                         <a href="https://aferrar.github.io/herd_immunity/">View Project</a>
                     </div>
-                    <!-- End .project-info -->
                 </div>
-                <!-- End .project -->
             </div>
         </div>
     </div>
-    <!-- End #projects -->
 
     <div id="skills">
-        <h2 class="heading"> Technical Skills</h2>
+        <h2 class="heading">Technical Skills</h2>
         <ul>
             <li>ArcGIS Desktop Suite</li>
             <li>ArcGIS Enterprise on Kubernetes (K8s)</li>
@@ -332,29 +311,24 @@
             <li>ZenHub</li>
         </ul>
     </div>
-    <!-- End #skills -->
 
     <div id="contact">
         <h2>Contact Me</h2>
         <div id="contact-form">
             <form method="POST" action="https://formspree.io/aferrar90@gmail.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your  email" required>
+                <input type="hidden" name="_subject" value="Contact request from personal website">
+                <input type="email" name="_replyto" placeholder="Your email" required>
                 <textarea name="message" placeholder="Your message" required></textarea>
                 <button type="submit">Send</button>
             </form>
         </div>
-        <!-- End #contact-form -->
     </div>
-    <!-- End #contact -->
 
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 copyright">
-                    <p>
-                        CONTACT ME
-                    </p>
+                    <p>CONTACT ME</p>
                 </div>
                 <div class="col-sm-2 top">
                     <span id="to-top">
@@ -374,13 +348,10 @@
             </div>
         </div>
     </footer>
-    <!-- End footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
     <script src="js/scripts.js"></script>
-
 </body>
 
 </html>
-
